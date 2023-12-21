@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Inter";
+  margin: 0;
+}
+
+.mobile_navigation {
+  background-color: #ffaf19;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.mobile_navigation_logo {
+  width: 100px;
+}
+
+.mobile_navigation_hamburger {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.mobile_navigation_hamburger_line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+}
+
+.mobile_navigation_hamburger_line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mobile_navigation_hamburger_line:last-child {
+  bottom: 0;
+}
+
+.mobile_navigation_panel {
+  background-color: #ffaf19;
+  padding: 20px;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.mobile_navigation_panel_top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile_navigation_panel_cross {
+  width: 20px;
+}
+
+.mobile_navigation_panel_links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.mobile_navigation_panel_link {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+input[type="email"] {
+  color: red;
+}
